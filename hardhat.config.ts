@@ -22,6 +22,12 @@ const config: HardhatUserConfig = {
       }
     ]
   },
+  networks: {
+    mumbai: {
+      url: "https://polygon-testnet.public.blastapi.io"
+      accounts: ["privatekey"]
+  }
+  },
   circom: {
     // (optional) Base path for input files, defaults to `./circuits/`
     inputBasePath: "./circuits",
