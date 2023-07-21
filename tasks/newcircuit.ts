@@ -10,6 +10,7 @@ task("newcircuit", "Generate config for a new circuit")
   .addParam("name", "Name of the circuit")
   .setAction(async (taskArgs, {}) => {
 
+    
     let circuitsConfig: CircomCircuitConfig[] = [];
 
     // check if file exists
